@@ -1,0 +1,334 @@
+
+*{
+    margin:0px auto;
+    padding:0px;
+    box-sizing: border-box;
+
+}
+html{
+    background-color:khaki;
+}
+/*************************************/
+@media(max-width:1000px){
+    
+    #home{
+        min-height:25px;
+    }
+    .lists{
+        margin:5px 10px 0 0;
+        padding:0px;
+    }
+    .lists ul li{
+        visibility: hidden;
+        font-size:1rem;
+    }
+    #navigation{
+        top:0px;
+        right:2px;
+    }
+}
+/****************************/
+.firstPage{
+    position:relative;
+    text-align:center;
+}
+.lists a{
+    text-decoration:none;
+    color:#180018;
+}
+.lists{
+    margin:2vh auto;
+    position:absolute;
+    top:0px;
+    right:0px;
+    padding:3vh 4vw 0 0;
+    display:flex;
+    justify-content: space-between;
+    font:1.5rem times;
+}
+.lists ul li:hover{
+    background-color:#eee;
+
+}
+li:hover{
+    transition:ease-in-out;
+    transition-duration: 500ms;
+}
+
+.lists ul li{
+    padding:1vw;
+    display:inline;
+}
+#svgLogo{
+    overflow:none;
+}
+/*******************************/
+#mainMenu li{
+    border:1px outset grey;
+    border-bottom-right-radius: 50%;
+    background-color:lightgray;
+    list-style: none;
+}
+#mainMenu a{
+    color:black;
+    text-decoration: none;
+}
+#home{
+    
+    background-size:cover;
+    align-content: center;
+    background:lightcyan;
+    background-attachment:fixed;
+}
+/*#Layer_1{
+    /*max-width: 100vw;
+   min-height: 50vh;*/
+   /*max-width:50vw;
+    min-width: 98vw !important;
+    width:100vw;
+    max-height: 100vh !important;
+    color:white;
+    transition:border, border-radius;
+    transition-duration:1s;
+    align-items: center;
+    left:20vw;
+}
+*/
+
+#mic{
+    animation:mic 4s linear;
+
+    animation-iteration-count: infinite;
+    animation-direction:reverse;
+    animation-delay: 2s;
+    transform-origin: center;
+    transform-box:fill-box;
+}
+#headPhone{
+    animation:headPhone 2s linear;
+
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-delay: 2s;
+    transform-origin: center;
+    transform-box:fill-box;
+}
+
+@keyframes mic{
+    0%{
+        transform:rotateY(0deg);
+    }
+    25%{
+        transform:rotateY(90deg);            
+    }
+    50%{
+        transform:rotateY(180deg);
+    }
+    75%{
+        transform:rotateY(270deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+@keyframes headPhone{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+#logo:hover{
+    animation:mic 5s linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+
+#navigation{
+    position:fixed;
+    bottom:3vw;
+    right:0.5vw;
+    color:rgb(206, 15, 15);
+    text-align: justify;
+    font-size:9vh;
+}
+#mainMenu li:hover{
+    border:2px inset lightgreen;
+    background-color:cyan;
+}
+
+/*
+#navigation,a{
+    color:wheat;
+    text-decoration: none;
+}
+summary{
+    font-size:9vh;
+    border-radius: 40%;
+    text-align:right;
+    outline:none;
+}
+#menuWidth{
+
+    min-width:100vh;
+    max-width:100vw;
+    min-height:89vh;
+    background-color: teal;
+    border-bottom-left-radius: 100%;
+    font-size:3.5rem;
+    text-align:right;
+}
+ul,li{
+    padding-right:20px;
+    text-decoration:none;
+    list-style: none;
+    
+}*/
+/*.................................................*/
+article{
+    min-height: 100vh;
+    margin-bottom:3vh;
+    box-shadow:2px 3px 3px grey;
+    border:2px ridge #eee;
+    border-width: 0 0 2px 2px;
+    border-radius:0 0 20px 20px;
+}
+
+#about{
+    color:#180018;
+    background-color:#F5F6F7;
+    font-size: 1.5rem;
+    padding-bottom:3vh;
+}
+.discription header,#design header{
+    text-decoration:none;
+}
+header{
+    text-align:center;
+    padding-top: 1.5rem;
+    text-decoration:underline;
+    font-family:'Times New Roman', Times, serif;
+}
+.discription{
+    width:900px;
+    max-width:90vw;
+    margin:3vh auto;
+    border:1px ridge rgb(106, 106, 248);
+    box-shadow: 4px 5px 4px grey;
+    font:1em helvatica;
+    border-radius:20px;
+    padding:1vw;
+    color:#eee;
+    background-color: rgb(83, 83, 228);
+}
+#imageThumbnail{
+    display:flex;
+    flex-wrap: wrap;
+}
+.thumbnailImage{
+    max-width:100vw;
+    width:48vw;
+    height:45vh;
+    min-width:250px;
+    justify-content: space-between;
+    
+}
+.box{
+    
+    margin-bottom:5vh;
+    justify-content: space-between;
+    
+}
+#stories{
+    background-color: #F5F6F7;
+    color:#180018;
+}
+
+#stories > header{
+    background-color:#ffffff;
+    font-family:Arial, Helvetica, sans-serif, serif;
+    margin-bottom: 3vh;
+    padding:3vh;
+    box-shadow:1px 1px 3px grey;
+
+}
+figcaption{
+    font-size:1.2rem;
+    font-weight: bold;
+}
+/*......................................*/
+
+
+#design{
+    display:flex;
+    flex-flow:row wrap;
+    background-color:#F5F6F7;
+    
+
+}
+article > header{
+
+    padding:15px;
+    /*background-color: lightslategrey;*/
+    box-shadow:3px 2px 2px rgb(165, 159, 157);
+    z-index:1;
+    margin-bottom: 0.5vh;
+    min-height:9vh;
+    font-family:Arial,Helvetica, sans-serif;
+    font-size:x-large;
+    background-color: white;
+    border-radius:20px 20px 0 0;
+    color:rgb(83, 83, 197);
+    margin-top:0px;
+}
+#design main{
+    max-height:90.5vh;
+    overflow:auto;
+    border-right:2px inset gray;
+    border-left:2px outset grey;
+}
+#design nav, #design aside{
+    /*background-color:lightgray;*/
+    flex:1;
+    text-align: center;
+    font-size:1.1rem;;
+    padding:5px;
+    justify-content:space-between;
+    line-height:10vh;
+    height:90.5vh;
+    overflow:auto;
+
+}
+#design main{
+    padding:8px;
+    /*background-color: linen;*/
+    flex:3;
+}
+#design a{
+    color:black;
+    text-decoration: none;
+}
+#design a:hover{
+    display:block;
+    background-color: tomato;
+
+}
+
+.sectio{
+    /*background-color:rgb(247, 216, 185);*/
+    margin-bottom: 5vh;
+    padding:0 1vw 5vh 1vw;
+    border-radius:10px;
+    background-color:#fff;
+}
+#aboutMe{
+    margin-bottom:0px;
+}
+footer{
+    min-height:5vh;
+    text-align:center;
+    padding:2vh;
+    color:whitesmoke;
+    background-color:black;
+}
