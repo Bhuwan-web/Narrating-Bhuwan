@@ -9,7 +9,55 @@ html{
     background-color:khaki;
 }
 /*************************************/
-@media(max-width:700px){
+@media all and (max-width:700px){
+    #design{
+        max-width:100vw;
+        display:grid !important;
+        grid-template-columns:1fr !important;
+    }
+    #design nav, #design aside{
+        line-height: normal !important;
+        height:max-content !important;
+        }
+   #design ul li{
+        box-sizing: border-box;
+        padding:0 20px;
+        border:2px solid red !important;
+        border-radius:20px;
+        display:inline-flex;
+        margin:0px 10px;
+    
+        
+        
+    }
+    #design a{
+        width:max-content;
+        max-height: min-content;
+    }
+    .contain{
+        max-height: none;
+    }
+    #design ul{
+        position:sticky;
+        top:0px;
+        left:0px;
+        max-width:90vw;
+        display:flex;
+        overflow-x:scroll;
+        flex-wrap: nowrap;
+    }
+    #design nav ul{
+       
+        list-style-type: none;
+        grid-template-rows: 1fr;
+    }
+    #design nav>header{
+        height:0px;
+        width:0px;
+        visibility: hidden;
+    }
+
+
     #home{
         min-height: fit-content;
     }
@@ -295,8 +343,6 @@ article > header{
     justify-content:space-between;
     line-height:10vh;
     height:90.5vh;
-    overflow:auto;
-
 }
 #design main{
     padding:8px;
